@@ -485,6 +485,24 @@ table {
 .title-layout h1 { font-size: 58px !important; }
 .qa-layout h2 { font-size: 60px !important; }
 
+
+
+/* Recipe appendix sheet: based on the provided simple brewing-record form */
+.recipe-appendix .content-area { justify-content: flex-start !important; }
+.recipe-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; width: 100%; }
+.recipe-sheet { background: #fff !important; border: 2.5px solid #1f1f1f !important; box-shadow: none !important; border-radius: 2px !important; overflow: hidden; color: #111; }
+.recipe-sheet table { width: 100%; height: 100%; border-collapse: collapse; table-layout: fixed; border: 0 !important; background: #fff !important; box-shadow: none !important; border-radius: 0 !important; }
+.recipe-sheet th, .recipe-sheet td { border: 1.7px solid #1f1f1f !important; background: #fff !important; color: #111 !important; padding: 8px 7px !important; text-align: center; vertical-align: middle; font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important; font-size: 15px !important; line-height: 1.25 !important; font-weight: 500 !important; }
+.recipe-sheet .label { font-weight: 700 !important; letter-spacing: .32em !important; font-size: 16px !important; }
+.recipe-sheet .maker-label { letter-spacing: -.02em !important; font-weight: 700 !important; }
+.recipe-sheet .field { text-align: left !important; padding-left: 12px !important; font-size: 15px !important; font-weight: 600 !important; }
+.recipe-sheet .head th { font-size: 15px !important; font-weight: 700 !important; letter-spacing: .16em !important; }
+.recipe-sheet .date { font-weight: 700 !important; }
+.recipe-sheet .sum-label, .recipe-sheet .content-label { font-weight: 700 !important; font-size: 17px !important; letter-spacing: .12em !important; }
+.recipe-sheet .content-cell { text-align: left !important; vertical-align: top !important; padding: 12px 14px !important; font-size: 13.5px !important; line-height: 1.46 !important; }
+.recipe-sheet .small { font-size: 12.8px !important; line-height: 1.35 !important; }
+.recipe-footnote { margin-top: 12px; text-align: center; color: #746b5e; font-size: 15px !important; line-height: 1.45; }
+
 </style>
 </head>
 <body>
@@ -529,7 +547,7 @@ table {
 </thead>
 <tbody>
 <tr>
-<td><strong>멥쌀</strong></td>
+<td><strong>쌀</strong></td>
 <td>3 kg</td>
 <td>깨끗이 백세하여 정성껏 찐 고두밥 방식</td>
 </tr>
@@ -712,6 +730,45 @@ table {
 <p>함께 나눈 정성만큼 맛있는 질문을 환영합니다.</p>
 </div>
 </div>
+
+<!-- Slide 13: Recipe Appendix -->
+<div class="slide-container recipe-appendix" id="slide-recipe-appendix">
+<h2 class="slide-title">약식 레시피 기록표</h2>
+<div class="content-area">
+<div class="recipe-grid">
+  <div class="recipe-sheet">
+    <table>
+      <colgroup><col style="width:18%"><col style="width:20%"><col style="width:20%"><col style="width:20%"><col style="width:22%"></colgroup>
+      <tr><td colspan="2" class="label">술 이 름</td><td colspan="4" class="field">송학곡자 단양주</td></tr>
+      <tr><td colspan="2" class="maker-label">만든이(조이름)</td><td colspan="4" class="field">26기 월요일 저녁반 3인 팀</td></tr>
+      <tr class="head"><th>날 짜</th><th>쌀</th><th>물</th><th>누 룩</th><th>기 타 / 가공방법</th></tr>
+      <tr><td class="date">05/11</td><td>쌀<br/>3 kg</td><td>3 L</td><td>송학곡자<br/>300 g</td><td class="small">수곡 여과 후<br/>고두밥과 혼화</td></tr>
+      <tr><td class="date">05/11~14</td><td>-</td><td>-</td><td>-</td><td class="small">하루 1~2회<br/>저어주기</td></tr>
+      <tr><td class="date">05/26</td><td>-</td><td>-</td><td>-</td><td class="small">치자 5 g,<br/>천혜향 진피 60 g<br/>후투입</td></tr>
+      <tr><td class="date">06/22</td><td>-</td><td>-</td><td>-</td><td class="small">최종 채주<br/>및 병입</td></tr>
+      <tr><td class="sum-label">합계</td><td>3 kg</td><td>3 L</td><td>300 g</td><td>치자 5 g<br/>진피 60 g</td></tr>
+      <tr><td class="content-label">내 용</td><td colspan="5" class="content-cell">쌀 3 kg, 물 3 L, 누룩 300 g의 기본 단양주 배합에 송학곡자 누룩을 사용했습니다. 담금 후 안정적으로 발효를 관리하고, 05/26에 치자와 천혜향 진피를 후투입하여 황금빛 색감과 산뜻한 시트러스 향을 더했습니다.</td></tr>
+    </table>
+  </div>
+  <div class="recipe-sheet">
+    <table>
+      <colgroup><col style="width:18%"><col style="width:20%"><col style="width:20%"><col style="width:20%"><col style="width:22%"></colgroup>
+      <tr><td colspan="2" class="label">술 이 름</td><td colspan="4" class="field">금정산성 단양주</td></tr>
+      <tr><td colspan="2" class="maker-label">만든이(조이름)</td><td colspan="4" class="field">26기 월요일 저녁반 3인 팀</td></tr>
+      <tr class="head"><th>날 짜</th><th>쌀</th><th>물</th><th>누 룩</th><th>기 타 / 가공방법</th></tr>
+      <tr><td class="date">05/11</td><td>쌀<br/>3 kg</td><td>3 L</td><td>금정산성<br/>300 g</td><td class="small">밀가루 150 g 추가,<br/>수곡 여과 후 혼화</td></tr>
+      <tr><td class="date">05/11~14</td><td>-</td><td>-</td><td>-</td><td class="small">하루 1~2회<br/>저어주기</td></tr>
+      <tr><td class="date">숙성기</td><td>-</td><td>-</td><td>-</td><td class="small">밀봉 후<br/>냉장 숙성</td></tr>
+      <tr><td class="date">06/22</td><td>-</td><td>-</td><td>-</td><td class="small">최종 채주<br/>및 병입</td></tr>
+      <tr><td class="sum-label">합계</td><td>3 kg</td><td>3 L</td><td>300 g</td><td>밀가루<br/>150 g</td></tr>
+      <tr><td class="content-label">내 용</td><td colspan="5" class="content-cell">기본 단양주 배합에 금정산성 누룩을 사용하고 밀가루 150 g을 더해 비교용 술로 빚었습니다. 구수한 누룩 향, 담백한 미색, 묵직한 바디감과 감칠맛을 확인하는 방향으로 제작했습니다.</td></tr>
+    </table>
+  </div>
+</div>
+<p class="recipe-footnote">※ 발표 자료의 공통 배합과 제작 타임라인을 기준으로 약식 기록표 형식에 맞춰 정리했습니다.</p>
+</div>
+</div>
+
 </div>
 <div class="help">←/→ 이동 · F 전체화면 · S 발표메모</div>
 <div class="notes-panel" id="notesPanel"><h3>발표 메모</h3><div id="noteText"></div></div>
@@ -739,7 +796,8 @@ table {
     "최종 완성된 두 단양주입니다. 같은 배합에서 출발했지만 송학곡자는 황금빛과 산뜻한 향, 금정산성은 담백한 색과 묵직한 질감으로 서로 다른 결과를 보여줍니다.",
     "두 술의 맛과 향 비교입니다. 향과 색은 송학곡자, 바디감은 금정산성이 강한 방향으로 정리했습니다.",
     "졸업 후기입니다. 과정에서 배운 점과 팀 프로젝트의 의미를 짧게 정리합니다.",
-    "마무리 및 질의응답입니다."
+    "마무리 및 질의응답입니다.",
+    "마지막 약식 레시피 기록표입니다. 두 술의 재료, 일정, 부재료와 가공방법을 제출 양식에 맞춰 한 장으로 정리했습니다."
 ];
   let index = Number(new URLSearchParams(location.search).get('slide')) - 1;
   if (!Number.isFinite(index) || index < 0 || index >= slides.length) index = 0;
